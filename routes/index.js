@@ -8,6 +8,7 @@ const auth = require('./modules/auth')
 
 router.use('/todos', authenticator, todo)
 router.use('/users', users)
+router.use('/auth', auth)
 router.use('/', authenticator, home)
 
 
